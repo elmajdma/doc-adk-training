@@ -1,0 +1,20 @@
+[project]
+name = "adk-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mohammed Abu El Majd", email = "Elmajdma@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk>=2.1.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+adk-training = "adk_training:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
